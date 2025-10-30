@@ -25,7 +25,7 @@ source $HOME/.cargo/env
 
 ### Clone and Run
 ```bash
-git clone <your-repo>
+git clone <https://github.com/E-ugine/storage-engine.git>
 cd storage-engine
 cargo run
 ```
