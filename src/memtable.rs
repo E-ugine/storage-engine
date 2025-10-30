@@ -44,7 +44,7 @@ impl MemTable {
     }
 
     pub fn put(&mut self, key: String, value: String) -> io::Result<()> {
-        // Log FIRST (durability!)
+        // Log FIRST (durability)
         self.wal.log_put(&key, &value)?;
         
         // Then update memory
@@ -214,18 +214,14 @@ mod tests {
         
         let mut memtable = MemTable::new(wal_path).unwrap();
         
-        // Add entries to trigger flush (max_size = 100)
         for i in 0..105 {
             memtable.put(format!("key_{}", i), format!("value_{}", i)).unwrap();
         }
-        
-        // After flush, memtable should have only 5 entries
+
         assert!(memtable.size() < 100);
-        
-        // SSTable file should exist
+
         assert!(std::path::Path::new("sstable_000000.sst").exists());
         
-        // Clean up
         fs::remove_file(wal_path).unwrap();
         fs::remove_file("sstable_000000.sst").unwrap();
     }
