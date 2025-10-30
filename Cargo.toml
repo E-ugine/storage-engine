@@ -1,0 +1,25 @@
+[package]
+name = "storage-engine"
+version = "0.1.0"
+edition = "2021"
+authors = ["E-ugine <agollaeugine@gmail.com>"]
+license = "MIT"
+description = "Write-optimized LSM-based key-value storage engine in Rust"
+repository = "https://github.com/yourusername/storage-engine"
+readme = "README.md"
+keywords = ["database", "storage-engine", "lsm-tree", "key-value", "embedded"]
+categories = ["database-implementations", "data-structures"]
+
+[dependencies]
+
+[dev-dependencies]
+# Dependencies only needed for testing (currently none)
+
+[[bin]]
+name = "storage-engine"
+path = "src/main.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

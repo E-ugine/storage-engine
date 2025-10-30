@@ -1,0 +1,22 @@
+# Rust build artifacts
+/target/
+Cargo.lock
+
+# Storage engine data files (don't commit these)
+*.log
+*.sst
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+test_*.log
+test_*.sst
