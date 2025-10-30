@@ -1,12 +1,3 @@
-# Storage Engine Project - Complete Summary
-
-**Status:** ✅ Production-Ready for Portfolio  
-**Date Completed:** October 30, 2025  
-**Total Development Time:** ~4 hours (single session)  
-**Lines of Code:** ~800 lines of Rust + ~1500 lines of documentation
-
----
-
 ## Built
 
 A **production-grade, LSM-based key-value storage engine** implementing the same core architecture used by:
@@ -24,19 +15,16 @@ This is **not a toy project** - it's a fully functional storage engine with real
 
 ### Code Metrics
 - **Rust modules:** 4 (main, memtable, wal, sstable)
-- **Functions:** 25+
 - **Tests:** 11 (100% passing)
 - **Test coverage:** Core functionality fully covered
 
 ### Documentation
-- **README.md:** 8,629 bytes - Comprehensive project overview
-- **ARCHITECTURE.md:** 11,531 bytes - Deep technical dive
-- **TUTORIAL.md:** 12,814 bytes - Learning guide with exercises
-- **QUICKSTART.md:** 4,770 bytes - 5-minute getting started
-- **CHANGELOG.md:** 2,403 bytes - Version history
+- **README.md:** - Comprehensive project overview
+- **ARCHITECTURE.md:** - Deep technical dive
+- **TUTORIAL.md:**  - Learning guide with exercises
+- **QUICKSTART.md:** - 5-minute getting started
+- **CHANGELOG.md:** - Version history
 - **Plus:** LICENSE, .gitignore, enhanced Cargo.toml
-
-### Total Documentation: ~40KB of high-quality technical writing
 
 ---
 
