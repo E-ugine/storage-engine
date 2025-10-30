@@ -9,7 +9,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 
 # Clone and build
-git clone <your-repo-url>
+git clone <https://github.com/E-ugine/storage-engine.git>
 cd storage-engine
 cargo build --release
 ```
@@ -23,8 +23,6 @@ cargo run
 
 Output:
 ```
-🚀 Storage Engine Demo - Automatic Flush
-=========================================
 
 📝 Writing 150 entries (flush threshold = 100)...
    Written 25 entries, MemTable size: 25

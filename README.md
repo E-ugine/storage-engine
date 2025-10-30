@@ -130,7 +130,7 @@ Ensures callers handle failures explicitly (disk full, permissions, etc.)
 
 ### Installation
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/E-ugine/storage-engine.git>
 cd storage-engine
 cargo build --release
 ```
